@@ -1,4 +1,5 @@
 import {defineConfig} from '@playwright/test';
+import { baseURL } from './env';
 
 export default defineConfig({
 
@@ -10,5 +11,6 @@ export default defineConfig({
   use:{
     browserName:'chromium',
     headless:false,
+    baseURL,
   }
 });

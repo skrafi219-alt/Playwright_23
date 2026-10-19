@@ -5,7 +5,7 @@ import testdata from '../test-data/testdata.json';
 
 test("login TestCase", async ({page,loginPage})=>{
     
-    await page.goto("https://rahulshettyacademy.com/client");
+    await page.goto("/client");
     
 
     await loginPage.login(testdata.username,testdata.password);
